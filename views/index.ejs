@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= title%></title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <div class="jumbotron jumbotron-fluid py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <h1 class="display-4 text-muted"><%= title %></h1>
+            <div class="col-lg-6">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Video Url.. " id="linkForm">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button" id="convertBtn">Download !</button>
+                  <div id="convertAnother"></div>
+                  <div id="convertAnother1"></div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div><br>
+        <p class="text-muted lead"><span id="filename"></span></p>
+        <p class="text-muted lead"><span id="size"></span></p>
+        <div id="btnDwn"></div>
+      </div>
+    </div>
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="/javascripts/indexMain.js"></script>
+    <script src="https://use.fontawesome.com/6725305f8a.js"></script>
+
+  </body>
+</html>
