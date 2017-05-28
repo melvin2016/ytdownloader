@@ -7,7 +7,7 @@ configure mongodb creds in '/db/config.js'
 # Step 3
 type 'npm start'
 # Step 4 
-goto <a>localhost:8080</a>
+goto ' http://localhost:8080 ' { initial port }
 
-#You can change the ports in '/bin/www'
+# You can change the ports in '/bin/www'
 
